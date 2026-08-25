@@ -1,0 +1,291 @@
+{
+  "framework": "nextjs-static-export",
+  "version": 2,
+  "visualEditing": {
+    "contractVersion": 1,
+    "mode": "strict",
+    "controlOnlyPaths": [
+      "home.stats[*].id",
+      "home.finishes[*].id",
+      "home.finishes[*].hex",
+      "home.reviews[*].id",
+      "products.items[*].id"
+    ]
+  },
+  "siteDataFile": "src/data/site-data.json",
+  "outputDirectory": "out",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "basePathEnvVar": "NEXT_PUBLIC_SITE_BASE_PATH",
+  "pages": [
+    { "id": "home", "label": "Home", "route": "/", "required": true },
+    { "id": "products", "label": "Products & Catalog", "route": "/products" },
+    { "id": "about", "label": "Artisan & Heritage", "route": "/about" },
+    { "id": "contact", "label": "Contact & Quote", "route": "/contact", "required": true }
+  ],
+  "editorSchema": {
+    "version": 1,
+    "sections": [
+      {
+        "id": "common",
+        "path": "common",
+        "type": "object",
+        "label": "Website Branding & Navigation",
+        "fields": [
+          { "key": "websiteTitle", "type": "text", "label": "Brand name", "required": true },
+          {
+            "key": "logoUrl",
+            "type": "image",
+            "label": "Brand logo",
+            "recommendedWidth": 512,
+            "recommendedHeight": 512
+          },
+          { "key": "headerCtaLabel", "type": "text", "label": "Header button label" },
+          {
+            "key": "navLabels",
+            "type": "object",
+            "label": "Navigation Labels",
+            "fields": [
+              { "key": "home", "type": "text", "label": "Home link" },
+              { "key": "products", "type": "text", "label": "Products link" },
+              { "key": "about", "type": "text", "label": "About link" },
+              { "key": "contact", "type": "text", "label": "Contact link" }
+            ]
+          },
+          { "key": "footerText", "type": "textarea", "label": "Footer description" },
+          { "key": "copyright", "type": "text", "label": "Copyright text" },
+          { "key": "contactPhone", "type": "text", "label": "Contact phone" },
+          { "key": "contactEmail", "type": "text", "label": "Contact email" },
+          { "key": "address", "type": "textarea", "label": "Studio address" }
+        ]
+      },
+      {
+        "id": "home",
+        "path": "home",
+        "pageKey": "home",
+        "type": "object",
+        "label": "Home Page",
+        "fields": [
+          { "key": "heroEyebrow", "type": "text", "label": "Hero eyebrow" },
+          { "key": "heroTitle", "type": "text", "label": "Hero title", "required": true },
+          { "key": "heroSubtitle", "type": "textarea", "label": "Hero subtitle" },
+          {
+            "key": "bannerImageUrl",
+            "type": "image",
+            "label": "Hero banner image",
+            "recommendedWidth": 1920,
+            "recommendedHeight": 1080
+          },
+          { "key": "primaryCtaLabel", "type": "text", "label": "Primary button label" },
+          { "key": "secondaryCtaLabel", "type": "text", "label": "Secondary button label" },
+          {
+            "key": "stats",
+            "type": "list",
+            "label": "Key Statistics",
+            "minItems": 0,
+            "maxItems": 6,
+            "fields": [
+              { "key": "value", "type": "text", "label": "Stat value", "required": true },
+              { "key": "label", "type": "text", "label": "Stat label", "required": true }
+            ]
+          },
+          { "key": "productsBadge", "type": "text", "label": "Products section badge" },
+          { "key": "productsHeading", "type": "text", "label": "Products section heading" },
+          { "key": "finishesBadge", "type": "text", "label": "Finishes section badge" },
+          { "key": "finishesHeading", "type": "text", "label": "Finishes section heading" },
+          { "key": "finishesSubtitle", "type": "textarea", "label": "Finishes subtitle" },
+          {
+            "key": "finishes",
+            "type": "list",
+            "label": "Signature Finishes",
+            "minItems": 0,
+            "maxItems": 6,
+            "fields": [
+              { "key": "name", "type": "text", "label": "Finish name", "required": true },
+              { "key": "hex", "type": "text", "label": "Color Hex code" },
+              { "key": "desc", "type": "textarea", "label": "Finish description" },
+              { "key": "feature1", "type": "text", "label": "Feature bullet 1" },
+              { "key": "feature2", "type": "text", "label": "Feature bullet 2" },
+              { "key": "feature3", "type": "text", "label": "Feature bullet 3" },
+              { "key": "ctaLabel", "type": "text", "label": "Button label" },
+              { "key": "fixtureTag", "type": "text", "label": "Sample fixture tag" },
+              { "key": "fixtureName", "type": "text", "label": "Sample fixture name" },
+              {
+                "key": "fixtureImage",
+                "type": "image",
+                "label": "Sample fixture image",
+                "recommendedWidth": 800,
+                "recommendedHeight": 800
+              }
+            ]
+          },
+          { "key": "processBadge", "type": "text", "label": "Process section badge" },
+          { "key": "processHeading", "type": "text", "label": "Process section heading" },
+          { "key": "processSubtitle", "type": "textarea", "label": "Process subtitle" },
+          {
+            "key": "processSteps",
+            "type": "list",
+            "label": "Craftsmanship Process Steps",
+            "minItems": 0,
+            "maxItems": 6,
+            "fields": [
+              { "key": "stepNumber", "type": "text", "label": "Step number" },
+              { "key": "title", "type": "text", "label": "Step title", "required": true },
+              { "key": "description", "type": "textarea", "label": "Step description" }
+            ]
+          },
+          { "key": "tradeBadge", "type": "text", "label": "Trade CTA badge" },
+          { "key": "tradeHeading", "type": "text", "label": "Trade CTA heading" },
+          { "key": "tradeSubtitle", "type": "textarea", "label": "Trade CTA description" },
+          { "key": "tradePrimaryCta", "type": "text", "label": "Trade primary button" },
+          { "key": "tradeSecondaryCta", "type": "text", "label": "Trade secondary button" },
+          { "key": "reviewsBadge", "type": "text", "label": "Reviews section badge" },
+          { "key": "reviewsHeading", "type": "text", "label": "Reviews section heading" },
+          { "key": "reviewsSubtitle", "type": "textarea", "label": "Reviews section subtitle" },
+          {
+            "key": "reviews",
+            "type": "list",
+            "label": "Client Reviews & Testimonials",
+            "minItems": 0,
+            "maxItems": 12,
+            "fields": [
+              { "key": "author", "type": "text", "label": "Client name", "required": true },
+              { "key": "rating", "type": "number", "label": "Star rating (1-5)" },
+              { "key": "comment", "type": "textarea", "label": "Review comment", "required": true }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "products",
+        "path": "products",
+        "pageKey": "products",
+        "type": "object",
+        "label": "Products Page",
+        "fields": [
+          { "key": "badge", "type": "text", "label": "Catalog badge" },
+          { "key": "title", "type": "text", "label": "Catalog title", "required": true },
+          { "key": "subtitle", "type": "textarea", "label": "Catalog subtitle" },
+          {
+            "key": "items",
+            "type": "list",
+            "label": "Product Items",
+            "minItems": 0,
+            "maxItems": 24,
+            "fields": [
+              { "key": "name", "type": "text", "label": "Product name", "required": true },
+              { "key": "category", "type": "text", "label": "Category" },
+              { "key": "price", "type": "number", "label": "Price in LKR", "required": true },
+              { "key": "rating", "type": "number", "label": "Rating" },
+              { "key": "reviewsCount", "type": "number", "label": "Reviews count" },
+              {
+                "key": "image",
+                "type": "image",
+                "label": "Product image",
+                "recommendedWidth": 800,
+                "recommendedHeight": 800
+              },
+              { "key": "finish", "type": "text", "label": "Finish name" },
+              { "key": "tag", "type": "text", "label": "Product badge tag" },
+              { "key": "description", "type": "textarea", "label": "Description" },
+              { "key": "dimensions", "type": "text", "label": "Dimensions" },
+              { "key": "leadTime", "type": "text", "label": "Foundry lead time" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "path": "about",
+        "pageKey": "about",
+        "type": "object",
+        "label": "About Page",
+        "fields": [
+          { "key": "badge", "type": "text", "label": "About badge" },
+          { "key": "heading", "type": "text", "label": "Main heading", "required": true },
+          { "key": "subtitle", "type": "textarea", "label": "Subtitle" },
+          { "key": "storyTitle", "type": "text", "label": "Story title" },
+          { "key": "storyBody", "type": "textarea", "label": "Story description" },
+          {
+            "key": "storyImage",
+            "type": "image",
+            "label": "Story image",
+            "recommendedWidth": 1200,
+            "recommendedHeight": 800
+          },
+          { "key": "statYears", "type": "text", "label": "Years in craft" },
+          { "key": "statAlloy", "type": "text", "label": "Alloy purity stat" },
+          { "key": "statBespoke", "type": "text", "label": "Bespoke projects stat" },
+          { "key": "sustainabilityHeading", "type": "text", "label": "Sustainability heading" },
+          { "key": "sustainabilityBody", "type": "textarea", "label": "Sustainability description" },
+          { "key": "ctaLabel", "type": "text", "label": "Consultation button label" }
+        ]
+      },
+      {
+        "id": "contact",
+        "path": "contact",
+        "pageKey": "contact",
+        "type": "object",
+        "label": "Contact Page",
+        "fields": [
+          { "key": "badge", "type": "text", "label": "Page badge" },
+          { "key": "heading", "type": "text", "label": "Page heading", "required": true },
+          { "key": "subtitle", "type": "textarea", "label": "Page subtitle" },
+          { "key": "formTitle", "type": "text", "label": "Form title" },
+          { "key": "formDescription", "type": "textarea", "label": "Form description" },
+          { "key": "whatsappNumber", "type": "text", "label": "WhatsApp phone number" },
+          { "key": "whatsappButtonLabel", "type": "text", "label": "WhatsApp submit button label" },
+          { "key": "showroomTitle", "type": "text", "label": "Showroom title" },
+          { "key": "showroomAddress", "type": "textarea", "label": "Showroom address" },
+          { "key": "showroomPhone", "type": "text", "label": "Showroom phone" },
+          { "key": "showroomEmail", "type": "text", "label": "Showroom email" },
+          { "key": "showroomHours", "type": "text", "label": "Showroom operating hours" },
+          {
+            "key": "faqs",
+            "type": "list",
+            "label": "Frequently Asked Questions",
+            "minItems": 0,
+            "maxItems": 10,
+            "fields": [
+              { "key": "q", "type": "text", "label": "Question", "required": true },
+              { "key": "a", "type": "textarea", "label": "Answer", "required": true }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "themeSchema": {
+    "version": 1,
+    "tokens": [
+      "colors.primary",
+      "colors.secondary",
+      "colors.accent",
+      "colors.background",
+      "colors.text",
+      "typography.headingFont",
+      "typography.bodyFont",
+      "typography.baseSize",
+      "spacing.heroMinHeight",
+      "spacing.sectionPadding"
+    ],
+    "defaults": {
+      "colors": {
+        "primary": "#d4af37",
+        "secondary": "#0b0d12",
+        "accent": "#b8860b",
+        "background": "#fdfbf7",
+        "text": "#0f172a"
+      },
+      "typography": {
+        "headingFont": "Playfair Display",
+        "bodyFont": "Plus Jakarta Sans",
+        "baseSize": "16px"
+      },
+      "spacing": {
+        "heroMinHeight": "85vh",
+        "sectionPadding": "6rem"
+      }
+    }
+  }
+}

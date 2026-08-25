@@ -1,0 +1,358 @@
+{
+  "project": {
+    "id": "proj_aurelia_brass_001"
+  },
+  "merchant": {
+    "businessName": "Aurelia Brass Co.",
+    "businessEmail": "inquiries@aureliabrass.com",
+    "businessPhone": "+94 75 565 4663",
+    "businessAddress": "742 Artisan Foundry Row, Brass District, Colombo 03, Sri Lanka"
+  },
+  "requirements": {
+    "requiredPages": ["home", "products", "about", "contact"]
+  },
+  "template": {
+    "structure": {
+      "pages": ["home", "products", "about", "contact"],
+      "theme": {
+        "primaryColor": "#d4af37",
+        "secondaryColor": "#0b0d12",
+        "accentColor": "#b8860b",
+        "backgroundColor": "#fdfbf7",
+        "textColor": "#0f172a",
+        "headingFont": "Playfair Display",
+        "bodyFont": "Plus Jakarta Sans",
+        "baseSize": "16px",
+        "heroMinHeight": "85vh",
+        "sectionPadding": "6rem"
+      }
+    }
+  },
+  "content": {
+    "common": {
+      "websiteTitle": "Aurelia Brass Co.",
+      "logoUrl": "",
+      "navLabels": {
+        "home": "Home",
+        "products": "Products & Catalog",
+        "about": "Artisan & Heritage",
+        "contact": "Contact & Quote"
+      },
+      "headerCtaLabel": "Request Quote",
+      "footerText": "Handcrafting solid brass architectural door hardware, spun pendant lighting fixtures, sculptural decor, and bespoke metalwork for luxury residences and commercial spaces.",
+      "copyright": "© 2026 Aurelia Brass Co. Master foundry craftsmanship & architectural metalwork. All rights reserved.",
+      "contactPhone": "075 565 4663",
+      "contactEmail": "inquiries@aureliabrass.com",
+      "address": "742 Artisan Foundry Row, Brass District, Colombo 03, Sri Lanka"
+    },
+    "home": {
+      "heroEyebrow": "Foundry Heritage & Architectural Studio",
+      "heroTitle": "Where Pure Brass Meets Timeless Luxury & Precision.",
+      "heroSubtitle": "Handcrafting solid brass architectural door hardware, spun pendant lighting fixtures, sculptural decor, and bespoke metalwork for luxury residences and commercial spaces worldwide.",
+      "bannerImageUrl": "/images/hero.jpg",
+      "primaryCtaLabel": "Explore Products & Catalog",
+      "secondaryCtaLabel": "Request Custom Quote",
+      "stats": [
+        { "id": "stat-1", "value": "35+", "label": "Years Foundry Craft" },
+        { "id": "stat-2", "value": "100%", "label": "Solid Virgin Brass" },
+        { "id": "stat-3", "value": "2,500+", "label": "Bespoke Projects" },
+        { "id": "stat-4", "value": "25-Year", "label": "Quality Guarantee" }
+      ],
+      "productsHeading": "Signature Brass Collections",
+      "productsBadge": "Curated Masterpieces",
+      "finishesBadge": "Material Science & Finishing Studio",
+      "finishesHeading": "Explore Our Signature Brass Finishes",
+      "finishesSubtitle": "Every piece in our shop is hand-treated by master patinators. Select a finish below to view its tactile character and aesthetic properties.",
+      "finishes": [
+        {
+          "id": "polished",
+          "name": "Polished Mirror Gold",
+          "hex": "#E5C158",
+          "desc": "High-lustre reflective mirror finish with anti-tarnish protective lacquer. Designed to withstand coastal environments, high-traffic commercial touchpoints, and luxury residential suites.",
+          "feature1": "100% Solid Virgin Brass Alloy (Cu60 / Zn40)",
+          "feature2": "Custom Hand-Applied Anti-Tarnish Sealant Available",
+          "feature3": "Living Patina Options for Natural Aging & Character",
+          "ctaLabel": "Order Finish Sample Swatches",
+          "fixtureTag": "Sample Fixture",
+          "fixtureName": "Aurelia Spun Brass Pendant",
+          "fixtureImage": "/images/pendant.jpg"
+        },
+        {
+          "id": "satin",
+          "name": "Satin Brushed Brass",
+          "hex": "#D4AF37",
+          "desc": "Hand-brushed directional grain for a refined contemporary texture with warm architectural luster and fingerprint resistance.",
+          "feature1": "Directional Hand-Grained Satin Finish",
+          "feature2": "Micro-Matte Ultra-Durable Topcoat",
+          "feature3": "Ideal for High-Traffic Entry Doors & Cabinetry",
+          "ctaLabel": "Order Finish Sample Swatches",
+          "fixtureTag": "Sample Fixture",
+          "fixtureName": "Brushed Aurelia Sconce",
+          "fixtureImage": "/images/pendant.jpg"
+        },
+        {
+          "id": "antique",
+          "name": "Vintage Antique Patina",
+          "hex": "#B8860B",
+          "desc": "Artisan hand-aged rich warm bronze tone with dark accent highlights reminiscent of heritage colonial foundry craft.",
+          "feature1": "Multi-Layer Hand-Applied Chemical Patina",
+          "feature2": "Accelerated Natural Oxidation Process",
+          "feature3": "Sealed with Carnauba Wax & Foundry Oil",
+          "ctaLabel": "Order Finish Sample Swatches",
+          "fixtureTag": "Sample Fixture",
+          "fixtureName": "Antique Heritage Pull Handle",
+          "fixtureImage": "/images/pendant.jpg"
+        },
+        {
+          "id": "hammered",
+          "name": "Raw Hammered Brass",
+          "hex": "#A37227",
+          "desc": "Hand-hammered organic tactile surface left unlacquered to age naturally and develop a unique personal patina over time.",
+          "feature1": "Hand-Forged Ball-Peen Hammer Dimples",
+          "feature2": "Living Finish — Naturally Evolves Over Time",
+          "feature3": "Organic Texture with Deep Light Refraction",
+          "ctaLabel": "Order Finish Sample Swatches",
+          "fixtureTag": "Sample Fixture",
+          "fixtureName": "Hammered Foundry Vessel",
+          "fixtureImage": "/images/pendant.jpg"
+        }
+      ],
+      "processBadge": "Master Metalworking",
+      "processHeading": "The Art of Pure Brass Foundry",
+      "processSubtitle": "From raw molten alloy to hand-polished architectural hardware, witness the meticulous stages behind every piece created in our studio.",
+      "processSteps": [
+        {
+          "stepNumber": "01",
+          "title": "Virgin Alloy Smelting",
+          "description": "We melt pure virgin copper and zinc alloys at 1,085°C to achieve supreme structural density and flawless surface purity."
+        },
+        {
+          "stepNumber": "02",
+          "title": "Precision Casting & Spinning",
+          "description": "Using traditional sand casting and heavy metal spinning lathes, raw forms are shaped to exact architectural blueprints."
+        },
+        {
+          "stepNumber": "03",
+          "title": "Hand Polishing & Knurling",
+          "description": "Master craftsmen use cotton buffing wheels and diamond knurling tools to achieve silk-smooth grain and tactile grip perfection."
+        },
+        {
+          "stepNumber": "04",
+          "title": "Patination & Quality Seal",
+          "description": "Hand-applied chemical patinas or micro-thin nano clear coats lock in color depth and protect against oxidation."
+        }
+      ],
+      "tradeBadge": "Trade & Architectural Program",
+      "tradeHeading": "Have a Custom Architectural Blueprint or Bespoke Project?",
+      "tradeSubtitle": "We work directly with architects, interior designers, and general contractors to engineer custom brass door hardware, oversized entry handles, feature wall panels, and bespoke lighting fixtures.",
+      "tradePrimaryCta": "Upload Blueprint / Request Quote",
+      "tradeSecondaryCta": "Explore Trade Benefits",
+      "reviewsBadge": "Verified Client Stories & Testimonials",
+      "reviewsHeading": "Trusted by Leading Architects, Designers & Discerning Homeowners",
+      "reviewsSubtitle": "Read authentic reviews from clients across Sri Lanka and worldwide who have commissioned our solid brass door hardware, spun lighting fixtures, and bespoke architectural metalwork.",
+      "reviews": [
+        {
+          "id": "rev-1",
+          "author": "Archt. Kasun Jayawardena",
+          "rating": 5,
+          "comment": "The tactile weight and precision knurling of Aurelia's door pulls completely transformed the main entry doors of our Cinnamon Gardens luxury villa project. Genuine 100% solid brass with no hollow compromise. Our clients were thoroughly impressed."
+        },
+        {
+          "id": "rev-2",
+          "author": "Ruwan & Dinithi Samarasinghe",
+          "rating": 5,
+          "comment": "We ordered three spun brass dome lights for our coastal dining pavilion. The warm ambient glow is mesmerizing, and the anti-tarnish protective lacquer has held up impeccably despite the humid sea breeze."
+        },
+        {
+          "id": "rev-3",
+          "author": "Elena Rostova",
+          "rating": 5,
+          "comment": "Exceptional craftsmanship. We specified 48 sets of Verona knurled handles for a boutique hotel kitchen and cabinetry suite. Every single piece had consistent patina depth and felt substantial in hand."
+        },
+        {
+          "id": "rev-4",
+          "author": "Dhanushka Perera",
+          "rating": 5,
+          "comment": "Collaborating directly with Aurelia's foundry team on custom laser-cut screen partitions was seamless. They adhered to exact CAD tolerances and delivered two weeks ahead of schedule. Unmatched Sri Lankan metal artistry."
+        },
+        {
+          "id": "rev-5",
+          "author": "Maya Senanayake",
+          "rating": 5,
+          "comment": "The Helios vessel is a true museum-quality centerpiece. The contrast between the organic sand-cast exterior and the mirror-polished bowl rim is breathtaking. Truly proud to support local master foundry artisans."
+        },
+        {
+          "id": "rev-6",
+          "author": "Chirantha Wickramasinghe",
+          "rating": 5,
+          "comment": "We fitted the Olympus bridge faucets in our bar and open kitchen. Smooth ceramic disc valves and remarkable heavy brass build. It draws compliments from every guest."
+        }
+      ]
+    },
+    "products": {
+      "badge": "2026 Master Brass Catalog",
+      "title": "Handcrafted Brass Collections",
+      "subtitle": "Explore our range of precision-milled architectural door pulls, hand-spun dome lights, solid brass bath fittings, and custom trade pieces.",
+      "items": [
+        {
+          "id": "aur-001",
+          "name": "The Monolith Solid Brass Door Pull",
+          "category": "Architectural Hardware",
+          "price": 102000,
+          "rating": 4.9,
+          "reviewsCount": 28,
+          "image": "/images/hero.jpg",
+          "finish": "Satin Brushed Brass",
+          "tag": "Best Seller",
+          "description": "Precision machined from a solid block of C360 virgin brass. Features diamond knurled handgrips and concealed heavy-duty mounting hardware.",
+          "dimensions": "24\" H x 1.5\" W x 2.25\" D",
+          "leadTime": "3 - 5 Business Days"
+        },
+        {
+          "id": "aur-002",
+          "name": "Aurelia Spun Brass Dome Pendant Light",
+          "category": "Lighting & Fixtures",
+          "price": 174000,
+          "rating": 5.0,
+          "reviewsCount": 42,
+          "image": "/images/pendant.jpg",
+          "finish": "Polished Mirror Gold",
+          "tag": "Signature Piece",
+          "description": "Hand-spun heavy gauge brass bowl with a warm reflective interior. Emits a rich golden ambient glow over dining tables and kitchen islands.",
+          "dimensions": "18\" Diameter x 10\" H",
+          "leadTime": "1 - 2 Weeks"
+        },
+        {
+          "id": "aur-003",
+          "name": "Helios Sculptural Solid Brass Vessel",
+          "category": "Luxury Home Decor",
+          "price": 126000,
+          "rating": 4.8,
+          "reviewsCount": 19,
+          "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop",
+          "finish": "Vintage Antique Patina",
+          "tag": "Artisan Limited Edition",
+          "description": "Asymmetrical organic brass sculpture individually sand-cast in our foundry. Polished interior contrasts with raw patinated exterior.",
+          "dimensions": "14\" H x 9\" W",
+          "leadTime": "In Stock"
+        },
+        {
+          "id": "aur-004",
+          "name": "Verona Knurled Cabinet Handle Set",
+          "category": "Architectural Hardware",
+          "price": 25500,
+          "rating": 4.9,
+          "reviewsCount": 64,
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop",
+          "finish": "Satin Brushed Brass",
+          "tag": "Architect Favorite",
+          "description": "Luxury tactile cabinet drawer pulls with precision cross-knurling. Perfect for bespoke kitchen cabinetry and wardrobe doors.",
+          "dimensions": "6.5\" Length x 1.2\" Projection",
+          "leadTime": "In Stock"
+        },
+        {
+          "id": "aur-005",
+          "name": "Olympus Solid Brass Bridge Faucet",
+          "category": "Kitchen & Bath",
+          "price": 267000,
+          "rating": 5.0,
+          "reviewsCount": 15,
+          "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop",
+          "finish": "Polished Mirror Gold",
+          "tag": "Bespoke Plumbing",
+          "description": "Classic deck-mounted bridge faucet crafted with ceramic disc valves and swivel spout. Built to last generations in luxury kitchens.",
+          "dimensions": "14.5\" Spout Height x 9\" Spout Reach",
+          "leadTime": "2 - 3 Weeks"
+        },
+        {
+          "id": "aur-006",
+          "name": "Curved Brass Wall Sconce Lighting",
+          "category": "Lighting & Fixtures",
+          "price": 108000,
+          "rating": 4.7,
+          "reviewsCount": 31,
+          "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=800&auto=format&fit=crop",
+          "finish": "Raw Hammered Brass",
+          "tag": "New Release",
+          "description": "Hand-hammered brass shield wall sconce casting dramatic wash lighting both upwards and downwards across interior surfaces.",
+          "dimensions": "16\" H x 6\" W x 4\" D",
+          "leadTime": "1 Week"
+        },
+        {
+          "id": "aur-007",
+          "name": "Custom Architectural Brass Panel",
+          "category": "Custom Fabrication",
+          "price": 360000,
+          "rating": 5.0,
+          "reviewsCount": 11,
+          "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop",
+          "finish": "Vintage Antique Patina",
+          "tag": "Custom Order",
+          "description": "Laser-cut or hand-hammered decorative brass screen panels for feature walls, room dividers, and elevator doors.",
+          "dimensions": "Custom Made to Blueprint",
+          "leadTime": "3 - 4 Weeks"
+        },
+        {
+          "id": "aur-008",
+          "name": "Artisan Solid Brass Tray & Coaster Suite",
+          "category": "Luxury Home Decor",
+          "price": 72000,
+          "rating": 4.9,
+          "reviewsCount": 53,
+          "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop",
+          "finish": "Satin Brushed Brass",
+          "tag": "Gift Selection",
+          "description": "Machined heavy brass valet tray paired with felt-bottomed coasters. Finished with a satin protective seal.",
+          "dimensions": "12\" L x 8\" W Tray",
+          "leadTime": "In Stock"
+        }
+      ]
+    },
+    "about": {
+      "badge": "Foundry History & Philosophy",
+      "heading": "Four Decades of Master Metalworking & Pure Brass Innovation",
+      "subtitle": "Founded in 1991, Aurelia Brass Co. has pioneered architectural brass fabrication, combining centuries-old sand casting techniques with precision engineering.",
+      "storyTitle": "Born from Fire, Shaped by Hand",
+      "storyBody": "What began as an independent foundry workshop in Colombo has evolved into an internationally acclaimed architectural metal studio. We reject hollow plated metals and cheap stampings, working exclusively in 100% solid virgin brass alloys.",
+      "storyImage": "/images/hero.jpg",
+      "statYears": "35+",
+      "statAlloy": "100%",
+      "statBespoke": "2,500+",
+      "sustainabilityHeading": "Zero-Waste Closed Loop Foundry",
+      "sustainabilityBody": "Brass is inherently 100% infinitely recyclable without any loss of structural integrity. 100% of our CNC brass shavings, casting gates, and trimmings are captured, re-smelted, and cast into new pieces.",
+      "ctaLabel": "Consult Our Metallurgists"
+    },
+    "contact": {
+      "badge": "Direct Foundry WhatsApp Concierge",
+      "heading": "Request a Custom Quote",
+      "subtitle": "Connect directly with our master metalsmiths via WhatsApp for immediate quotes, finish consultations, and custom architectural fabrication orders.",
+      "formTitle": "Project Specification Form",
+      "formDescription": "Submit your inquiry below to launch WhatsApp with pre-filled specifications.",
+      "whatsappNumber": "94755654663",
+      "whatsappButtonLabel": "Send Inquiry via WhatsApp",
+      "showroomTitle": "Flagship Studio & Foundry",
+      "showroomAddress": "742 Artisan Foundry Row, Brass District, Colombo 03, Sri Lanka",
+      "showroomPhone": "075 565 4663 / +94 75 565 4663",
+      "showroomEmail": "inquiries@aureliabrass.com",
+      "showroomHours": "Monday – Friday: 9:00 AM – 6:00 PM IST | Saturday: By Appointment",
+      "faqs": [
+        {
+          "q": "What is the lead time for custom brass fabrication in Sri Lanka?",
+          "a": "In-stock catalog items ship within 3–5 business days across Sri Lanka. Custom architectural fabrications typically take 2–4 weeks depending on CAD blueprint complexity, casting moulds, and hand-patination steps."
+        },
+        {
+          "q": "Do you offer trade pricing for local architects and interior designers?",
+          "a": "Yes, we offer exclusive trade discounts (up to 25% off MSRP) for verified architects, interior designers, general contractors, and hotel developers. Please select 'Trade Program' in the form above."
+        },
+        {
+          "q": "What is the difference between living brass and lacquered brass?",
+          "a": "Living brass (unlacquered) naturally oxidizes over time, developing a rich vintage patina suitable for coastal and tropical climates. Lacquered brass is coated with a clear baked-on protective layer that keeps the mirror gold lustre intact for decades."
+        },
+        {
+          "q": "Can you manufacture custom brass hardware from CAD blueprints?",
+          "a": "Absolutely. Our foundry engineering team can import .DWG, .DXF, or .STEP files to precision CNC machine or sand-cast bespoke hardware to your exact architectural specifications."
+        }
+      ]
+    }
+  }
+}

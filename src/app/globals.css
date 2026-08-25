@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --brand-color: #d4af37;
+  --brand-secondary: #0b0d12;
+  --brand-accent: #b8860b;
+  --page-background: #fdfbf7;
+  --page-text: #0f172a;
+  --hero-min-height: 85vh;
+  --section-padding: 6rem;
+  --base-size: 16px;
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Plus Jakarta Sans', sans-serif;
+
+  --bg-obsidian: #0b0d12;
+  --bg-card: #131720;
+  --bg-card-hover: #1b212d;
+  --bg-subtle: #07080b;
+  
+  --brass-gold: var(--brand-color, #d4af37);
+  --brass-gold-light: #f3e5ab;
+  --brass-bronze: var(--brand-accent, #b8860b);
+  --brass-dark: #8b5a2b;
+  --brass-patina: #4a6b5d;
+  
+  --text-primary: #f8f6f0;
+  --text-secondary: #a3a8b5;
+  --text-muted: #6b7280;
+
+  --border-gold: rgba(212, 175, 55, 0.25);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+html.light, [data-theme="light"] {
+  --bg-obsidian: var(--page-background, #fdfbf7);
+  --bg-card: #ffffff;
+  --bg-card-hover: #faf5ec;
+  --bg-subtle: #f6efe2;
+  
+  --brass-gold: var(--brand-accent, #b8860b);
+  --brass-gold-light: var(--brand-color, #d4af37);
+  --brass-bronze: #8b5a2b;
+  --brass-dark: #5c3b19;
+  
+  --text-primary: var(--page-text, #14171f);
+  --text-secondary: #474e5d;
+  --text-muted: #6e7585;
+
+  --border-gold: rgba(184, 134, 11, 0.3);
+  --border-subtle: rgba(0, 0, 0, 0.06);
+}
+
+body {
+  background-color: var(--bg-obsidian);
+  color: var(--text-primary);
+  font-family: var(--body-font, 'Plus Jakarta Sans', sans-serif);
+  font-size: var(--base-size, 16px);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, .font-serif-luxury {
+  font-family: var(--heading-font, 'Playfair Display', serif);
+}
+
+/* Authentic Luxury Metallic Brass Gradients for Buttons - Powered by dynamic theme tokens */
+.btn-brass-primary,
+.btn-brand-primary {
+  background: linear-gradient(135deg, var(--brand-color, #d4af37) 0%, var(--brand-accent, #b8860b) 100%) !important;
+  color: #0b0d12 !important;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-brass-primary:hover,
+.btn-brand-primary:hover {
+  filter: brightness(1.12);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+  transform: translateY(-1px);
+}
+
+.btn-brass-secondary,
+.btn-brand-secondary {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--brand-accent, rgba(184, 134, 11, 0.35));
+  color: #14171f;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.dark .btn-brass-secondary,
+.dark .btn-brand-secondary {
+  background: rgba(19, 23, 32, 0.85);
+  border: 1px solid var(--brand-color, rgba(212, 175, 55, 0.3));
+  color: #f8f6f0;
+}
+
+.btn-brass-secondary:hover,
+.btn-brand-secondary:hover {
+  border-color: var(--brand-color, #d4af37);
+  background: rgba(212, 175, 55, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Subtle Shimmer & Metallic Text Gradients */
+.text-brass-gradient {
+  background: linear-gradient(135deg, #b8860b 0%, #c59b27 40%, #8b5a2b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .text-brass-gradient {
+  background: linear-gradient(135deg, #f8e8a6 0%, #d4af37 40%, #b8860b 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-obsidian);
+}
+::-webkit-scrollbar-thumb {
+  background: #c59b27;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8860b;
+}
+
+/* Smooth Transitions */
+html {
+  scroll-behavior: smooth;
+}
